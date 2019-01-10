@@ -1,2 +1,3 @@
-# unbalanced-data-classification
-Resampling techniques for unbalanced data classification to date and their comparison.
+# Unbalanced data classification techniques
+
+Overview of **techniques for unbalanced data classification** used to date and their comparison.
