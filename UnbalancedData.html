@@ -13537,19 +13537,6 @@ where $p_o$ is the observed agreement, and $p_e$ is the expected agreement. It b
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># [TODO] check make_scorer on sklearn</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -14494,7 +14481,16 @@ TP: 2435 ; TN: 72040 ; FP: 42669 ; FN: 1899
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Different-Perspective">Different Perspective<a class="anchor-link" href="#Different-Perspective">&#182;</a></h2><p>[TODO]</p>
+<p>For our dataset, SMOTE seems to be working the best.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>We cannot really determine which approach is going to work best on a problem and the dataset you are working on. While working with unbalanced data you'll have to test many approaches to see which one works the best. Start small and build up your model. Try a few resampling methods, the SMOTE is a great baseline model to use. Use other metrics than accuracy to evaluate your model and train the model to pay more attention to the minority class using cost-sensitive learning. When you have your baseline model, try using more specific and advanced resampling methods. If you work with extremely unbalanced and noisy data, try using a different perspective on the problem (e.g. Anomaly detection).</p>
 
 </div>
 </div>
